@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Objets en JavaScript(Déconseillé)</title>
+</head>
+<body>
+    <script>
+        function Identite(n, p, a) {
+            this.nom = n;
+            this.prenom = p;
+            this.age = a;
+        }
+
+        var pierre = new Identite("Pierre", "Giroud", 25);
+        var victor = new Identite("Victor", "Durand", 24);
+
+        alert("Age de Pierre : " + pierre.age + 
+        "\nAge de Victor : " + victor.age);
+    </script> 
+</body>
+</html>

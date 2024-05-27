@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Découverte de l'objet array</title>
+</head>
+
+<body>
+    <script>
+        // var prenoms = ["Lionel", "Dimitri", "Zalika",];
+        //
+        // prenoms[prenoms.length] = "Maré";
+        // prenoms[prenoms.length] = "Chloé";
+        //
+        // alert(" On a ajouté " + prenoms[3] + " et " + prenoms[4] + " à notre tableau");
+
+        //var prenoms = ["Lionel", "Dimitri", "Zalika", "Maré"], p = '';
+//
+        //for (var i = 0; i < prenoms.length; i++) {
+        //    p += "Prenom n°" + (i + 1) + " : " + prenoms[i] + "\n";
+        //}
+//
+        //alert(p);
+
+
+        // Objet Littéral
+            var prenoms = {
+                prenom1 : "Lionel",
+                prenom2 : "Dimitri",
+                prenom3 : "Zalika",
+                prenom4 : "Maré"
+            }, p = "";
+         
+            for(var i in prenoms){
+                p += i + " : " + prenoms[i] + "\n";
+            }
+            alert(p);
+
+    </script>
+</body>
+
+</html>

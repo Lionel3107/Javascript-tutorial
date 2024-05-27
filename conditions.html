@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions</title>
+</head>
+
+<body>
+    <h1>Les conditions en JavaScript</h1>
+    <script>
+        var heure = 27;
+
+        if (typeof (heure) == "number" == true) {
+            if (heure <= 12 == true) {
+                alert("C'est le matin");
+            }
+            else if (heure == 12 == true) {
+                alert("Il est midi");
+            }
+            else if (heure <= 18 == true) {
+                alert("C'est l'après midi");
+            }
+            else {
+                alert("C'est le soir");
+            }
+
+        }
+        else{
+            alert("Mauvais type de valeur");
+        }
+
+
+    </script>
+</body>
+
+</html>

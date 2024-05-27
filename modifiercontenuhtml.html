@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modifier du contenu HTML</title>
+</head>
+<body>
+    <h1 id="gros_titre">Decouverte du DOM HTML</h1>
+    <p class="para">Du texte et <a href="https://my.spline.design/miniroommusiccopy-363404baab6770e9ea186154cdab93ed/">un lien</a></p>
+    <p  class="para">Un deuxième paragraph</p>
+    <p><a href="https://my.spline.design/miniroommusiccopy-363404baab6770e9ea186154cdab93ed/"></a>Image</p>
+
+    <script>
+        //document.getElementById("gros_titre").innerHTML += " <mark> et de la modification en JavaScript </mark> ";
+        document.querySelector(".para").className = "para1";
+
+        document.getElementById("gros_titre").style.color = "orange";
+        document.getElementById("gros_titre").style.fontSize = "40px";
+
+    </script>
+</body>
+</html>

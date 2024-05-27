@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les closures en JavaScript</title>
+</head>
+<body>
+      <script>
+        function compteur(){
+            var i = 0;
+
+            return function(){
+                return i++;
+            }
+        }
+        var plusUn = compteur();
+        var autreInstance = compteur();
+
+        alert("premier tour : " + plusUn() +
+        "\nDeuxième tour : " + plusUn() +
+        "\nPremier tour autreInstance : " + autreInstance() + 
+        "\nTroisième tour : " + plusUn());
+      </script>
+</body>
+</html>

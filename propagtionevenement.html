@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La propagation des évènements</title>
+</head>
+
+<body>
+    <h1 id="gros_titre">Les évènements</h1>
+    <div id="div">
+        <p>Un premier paragraph</p>
+        <p>Un deuxième paragraph</p> 
+    </div>
+
+    <script>
+        var div = document.getElementById('div');
+        var p1 = document.querySelector('p')
+        div.addEventListener('click', MessageDiv);
+        p1.addEventListener('click', MessageP)
+        function MessageDiv(){
+            alert('Evènement du div');
+        }
+        function MessageP(){
+            alert('Evènement du paragraph');
+        }
+    </script>
+</body>
+
+</html>

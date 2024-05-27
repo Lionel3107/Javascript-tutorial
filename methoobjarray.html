@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les methodes de l'objet array</title>
+</head>
+
+<body>
+    <script>
+        // Supprimer et ajouter des éléments dans un tableau
+
+        // var prenoms = ["Lionel", "Dimitri", "Zalika", "Julia", "Claire"], p = "";
+        // var taille = prenoms.push("Florian", "Chloé");
+        // for (var i = 0; i < prenoms.length; i++) {
+        //     p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + " \n ";
+        // }
+        // alert("Le tableau contient : " + taille + " éléments : \n\n" + p);
+
+
+        //var prenoms = ["Lionel", "Dimitri", "Zalika", "Julia", "Claire"], p = "";
+        //var suppr = prenoms.pop();
+        //for (var i = 0; i < prenoms.length; i++) {
+        //    p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + " \n ";
+        //}
+        //alert(p + "\nNous avons supprimer " +suppr+ " du tabeau ");
+
+
+        // Methode SHITH et UNSHIFT
+        //var prenoms = ["Lionel", "Dimitri", "Zalika", "Julia", "Claire"], p = "";
+        //var taille = prenoms.unshift("Floriant", "Chloé");
+        //for (var i = 0; i < prenoms.length; i++) {
+        //    p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + " \n ";
+        //}
+        //alert("Notre tableau contient " + taille + " prénoms : \n\n" +p);
+
+
+        // var prenoms = ["Lionel", "Dimitri", "Zalika", "Julia", "Claire"], p = "";
+        // var suppr = prenoms.shift();
+        // for (var i = 0; i < prenoms.length; i++) {
+        //     p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + " \n ";
+        // }
+        // alert("Nouveau tableau: \n\n" + p + " \n\nPrénom supprimé : " + suppr);
+
+        // Methode SPLICE
+
+        //var prenoms = ["Lionel", "Dimitri", "Zalika", "Julia", "Claire"], p = "";
+        //prenoms.splice(1,2,"Florian", "Chloé");
+        //for (var i = 0; i < prenoms.length; i++) {
+        //    p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + "\n";
+        //}
+        //alert("Nouveau tableau: \n\n" + p);
+
+
+        // Methode SORT
+
+        //var prenoms = ["Lionel", "lionel", "Zalika", "zalika"], p = "";
+        //prenoms.sort();
+        //prenoms.reverse();
+        //for (var i = 0; i < prenoms.length; i++) {
+        //    p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + "\n";
+        //}
+        //alert("Nouveau tableau: \n\n" + p);
+
+
+
+        // Methode JOIN
+
+        //var prenoms = ["Lionel", "Dimitri", "Zalika", "Julia", "Claire"], p = "";
+        //var chaine = prenoms.join("/")
+        //for (var i = 0; i < prenoms.length; i++) {
+        //    p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + "\n";
+        //}
+        //alert("Nouveau tableau: \n\n" + chaine);
+
+
+        // Methode SLICE
+
+        //var prenoms = ["Lionel", "Dimitri", "Julia", "Claire"], p = "";
+        //var garçons = prenoms.slice(0,2);
+        //for (var i = 0; i < prenoms.length; i++) {
+        //    p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + "\n";
+        //}
+        //alert("Nouveau tableau de base : \n" + prenoms +
+        //"\nLe tableau crée par slice() : " + garçons);
+
+
+
+        var garçons = ["Lionel", "Dimitri"];
+        var filles = ["Julia", "Claire"];
+
+        var gf = ["Julia", "Claire" , "Lionel", "Dimitri"];
+        for (var i = 0; i < prenoms.length; i++) {
+            p += "Prenoms n°" + (i + 1) + " : " + prenoms[i] + "\n";
+        }
+        alert("Nouveau tableau de base : \n" + prenoms +
+            "\nLe tableau crée par slice() : " + garçons);
+
+
+    </script>
+</body>
+
+</html>

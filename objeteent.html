@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'object event</title>
+</head>
+<body>
+    <hi id="gros_titre">Les évènements</hi>
+    <div class="div1">
+        <p id="p1">Qui est le declencheur ? Le porteur d'évènements?</p>
+    </div>
+
+    <script>
+        var div1 = document.getElementById("div1");
+        var p1 = document.getElementById("p1");
+
+        div1.addEventListener('click', Message);
+
+        function Message(event) {
+            this.innerHTML = 'Element declencheur : ' + event.target +
+            '<br>Element portant l\'évènement : ' + event.currentTarget;
+        }
+    </script>   
+</body>
+</html>
